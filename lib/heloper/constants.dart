@@ -1,6 +1,5 @@
 import 'package:bus_tracking_task/themes/colors.dart';
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 
 /// icons
 
@@ -89,6 +88,14 @@ Icon kGiftTabIcon({double iconSize = 32.0}) {
 }
 
 /// *** tab icons end
+
+Icon kLoveTabIcon({double iconSize = 32.0}) {
+  return Icon(
+    Icons.favorite_border,
+    size: iconSize,
+  );
+}
+
 ImageIcon kImageIcon({required String iconPath, double? iconSize = 32.0}) {
   return ImageIcon(
     AssetImage(iconPath),
