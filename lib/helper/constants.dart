@@ -1,6 +1,8 @@
 import 'package:bus_tracking_task/themes/colors.dart';
 import 'package:flutter/material.dart';
 
+/// varables
+
 /// icons
 
 ImageIcon kBuoyIcon = kImageIcon(
@@ -66,6 +68,7 @@ Icon kMapTabIcon({double iconSize = 32.0}) {
   return Icon(
     Icons.map_outlined,
     size: iconSize,
+    color: kGrey600,
   );
 }
 
@@ -77,6 +80,7 @@ Icon kCalenderTabIcon({double iconSize = 32.0}) {
   return Icon(
     Icons.calendar_today,
     size: iconSize,
+    color: kGrey600,
   );
 }
 
@@ -84,6 +88,7 @@ Icon kGiftTabIcon({double iconSize = 32.0}) {
   return Icon(
     Icons.card_giftcard,
     size: iconSize,
+    color: kGrey600,
   );
 }
 
@@ -100,6 +105,6 @@ ImageIcon kImageIcon({required String iconPath, double? iconSize = 32.0}) {
   return ImageIcon(
     AssetImage(iconPath),
     size: iconSize,
-    color: kTextBlack,
+    color: kGrey600,
   );
 }
