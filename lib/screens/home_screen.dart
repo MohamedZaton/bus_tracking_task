@@ -11,6 +11,11 @@ class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('BMTC'),
+        centerTitle: true,
+        actions: const [Icon(Icons.person)],
+      ),
       body: Navigator(
         key: Get.nestedKey(1),
         initialRoute: SearchTabScreen.id,

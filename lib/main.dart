@@ -3,6 +3,7 @@ import 'package:bus_tracking_task/controllers/search_controller.dart';
 import 'package:bus_tracking_task/screens/home_screen.dart';
 import 'package:bus_tracking_task/screens/map_screen.dart';
 import 'package:bus_tracking_task/screens/tabs/search_tab_screen.dart';
+import 'package:bus_tracking_task/themes/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,9 +22,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Bus Tracking system',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: buildLightTheme(),
       initialRoute: HomeScreen.id,
       getPages: [
         /// home page
