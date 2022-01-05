@@ -41,7 +41,9 @@ dependencies:
   url_launcher: ^6.0.9
   # local storage
   shared_preferences: ^2.0.11
-
+  # map
+  flutter_google_places: ^0.3.0
+  geocoding: ^2.0.1
   # testing unit
   equatable: ^2.0.3
   # state management

@@ -1,5 +1,6 @@
 import 'package:bus_tracking_task/controllers/home_controller.dart';
 import 'package:bus_tracking_task/helper/constants.dart';
+import 'package:bus_tracking_task/screens/tabs/map_tab_screen.dart';
 import 'package:bus_tracking_task/screens/tabs/search_tab_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +19,7 @@ class HomeScreen extends GetView<HomeController> {
       ),
       body: Navigator(
         key: Get.nestedKey(1),
-        initialRoute: SearchTabScreen.id,
+        initialRoute: MapTabScreen.id,
         onGenerateRoute: controller.onGenerateRoute,
       ),
       bottomNavigationBar: Obx(

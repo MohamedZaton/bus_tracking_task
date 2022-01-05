@@ -25,7 +25,7 @@ class HomeController extends GetxController {
     if (settings.name == MapTabScreen.id) {
       return GetPageRoute(
         settings: settings,
-        page: () => const MapTabScreen(),
+        page: () => MapTabScreen(),
         binding: BindingsBuilder(() {
           Get.lazyPut<EmptyController>(() => EmptyController());
         }),

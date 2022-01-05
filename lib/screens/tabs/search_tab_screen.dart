@@ -9,18 +9,26 @@ class SearchTabScreen extends GetView<SearchController> {
 
   @override
   Widget build(BuildContext context) {
+    final obj = Get.put(SearchController());
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Your trip planner'),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            _SourceDestinationForm(),
-          ],
+        appBar: AppBar(
+          title: const Text('Your trip planner'),
         ),
-      ),
-    );
+        body: Obx(
+          () => obj.dataAvailable
+              ? Container(
+                  child: Center(
+                    child: Text(
+                      obj.tripList.length.toString(),
+                    ),
+                  ),
+                )
+              : Container(
+                  child: const Center(
+                    child: Text(".... waiting ... "),
+                  ),
+                ),
+        ));
   }
 }
 
